@@ -1,0 +1,21 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: roboshop
+  region: us-east-1
+accessConfig:
+  bootstrapClusterCreatorAdminPermissions: false # default is true
+  authenticationMode: API_AND_CONFIG_MAP
+  accessEntries:
+    - principalARN: arn:aws:iam::218897024457:user/Praveen
+      type: STANDARD # optional Type
+      kubernetesGroups: # optional Kubernetes groups
+        - devops-traineess # groups can used to give permissions via RBAC
+    - principalARN: arn:aws:iam::218897024457:user/Ravi
+      type: STANDARD # optional Type
+      kubernetesGroups: # optional Kubernetes groups
+        - devops-traineess # groups can used to give permissions via RBAC
+        # eksctl create accessentry -f 03-ae.yaml
+        
+   
