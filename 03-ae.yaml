@@ -18,4 +18,5 @@ accessConfig:
         - devops-traineess # groups can used to give permissions via RBAC
         # eksctl create accessentry -f 03-ae.yaml
         
+        
    
