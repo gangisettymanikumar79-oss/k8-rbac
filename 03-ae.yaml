@@ -16,10 +16,10 @@ accessConfig:
     - principalARN: arn:aws:iam::218897024457:user/Praveen
       type: STANDARD # optional Type
       kubernetesGroups: # optional Kubernetes groups
-        - devops-traineess # groups can used to give permissions via RBAC
+        - devops-trainees # groups can used to give permissions via RBAC
     - principalARN: arn:aws:iam::218897024457:user/Ravi
       kubernetesGroups: # optional Kubernetes groups
-        - devops-traineess # groups can used to give permissions via RBAC
+        - devops-trainees # groups can used to give permissions via RBAC
     - principalARN: arn:aws:iam::160885265516:user/siva
       type: STANDARD # optional Type
       kubernetesGroups: # optional Kubernetes groups

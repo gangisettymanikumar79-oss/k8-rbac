@@ -3,16 +3,16 @@ apiVersion: rbac.authorization.k8s.io/v1
 # You need to already have a Role named "pod-reader" in that namespace.
 kind: RoleBinding
 metadata:
-  name: devops-traineess
+  name: devops-trainees
   namespace: roboshop
 subjects:
 # You can specify more than one "subject"
 - kind: Group
-  name: devops-traineess # "name" is case sensitive
+  name: devops-trainees # "name" is case sensitive
   apiGroup: rbac.authorization.k8s.io
 roleRef:
   # "roleRef" specifies the binding to a Role / ClusterRole
   kind: Role #this must be Role or ClusterRole
-  name: devops-traineess # this must match the name of the Role or ClusterRole you wish to bind to
+  name: devops-trainees # this must match the name of the Role or ClusterRole you wish to bind to
   apiGroup: rbac.authorization.k8s.io
 
